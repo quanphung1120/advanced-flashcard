@@ -1,0 +1,82 @@
+# Root .gitignore for monorepo
+
+# Node
+/node_modules
+packages/*/node_modules
+# Yarn / npm / pnpm lockfiles (keep them committed across the repo - don't ignore)
+# pnpm-lock.yaml
+
+# Build outputs
+/dist
+/build
+/vite/dist
+/dist-ssr
+
+# Environment
+.env
+.env.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+ehthumbs.db
+Icon?
+
+# Misc
+coverage
+coverage/**
+.cache
+
+# Go build artifacts (also used in packages/backend)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/pkg/
+
+# Go vendor dir
+/vendor/
+
+# Docker
+.dockerignore
+
+# Editor swap files
+*.swp
+*~
+
+# Local tools
+.local
+
+# Ignore built app data
+/.idea
+
+# Ignore pnpm store (common for local dev)
+.pnpm-store
+
+# TanStack Start / Nitro / Wranger outputs
+.nitro
+.tanstack
+.wrangler
+.output
+.vinxi
+
+# specific: package state
+todos.json
+
+# End of .gitignore

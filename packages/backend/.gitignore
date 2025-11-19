@@ -1,0 +1,37 @@
+# Go .gitignore for backend package
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of go test
+*.test
+
+# Build output
+bin/
+pkg/
+
+# Blackbox
+vendor/
+
+# Environment
+.env
+.env.*
+
+# Editor
+.vscode
+.idea
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
+
+# Temporary files
+*~
+
+# End of Go .gitignore

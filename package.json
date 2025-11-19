@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter frontend --silent run dev\" \"cd packages/backend && go run .\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
