@@ -4,9 +4,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "concurrently \"pnpm --filter frontend --silent run dev\" \"cd packages/backend && go run .\""
+    "dev": "concurrently \"pnpm --filter frontend --silent run dev\" \"cd packages/backend && go run ./src/main.go\""
   },
   "devDependencies": {
-    "concurrently": "^8.0.0"
+    "concurrently": "^8.2.2"
   }
 }
